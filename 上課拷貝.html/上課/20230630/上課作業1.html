@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box-big{
+      width: 500px;
+      height: 500px;
+      background-color: bisque;
+      position:relative
+    }
+    .box-little{
+      width: 50px;
+      height: 50px;
+      background-color: red;
+      position: absolute;
+      left: calc(50% - 50px / 2 );
+      top: calc(50% - 50px / 2 );
+    }
+  </style>
+</head>
+<body>
+<div class="box-big">
+  <div class="box-little"></div>
+</div>
+  
+</body>
+</html>

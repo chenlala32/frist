@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body{
+      margin: 0;
+    }
+    .box-big{
+      width: 600px;
+      height: 500px;
+      background-color: aqua;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .box{
+      width: 100px;
+      height: 80px;
+      background-color: purple;
+      border: 2px solid yellow;
+    }
+    .box-input{
+      width: 100%;
+      height: 80px;
+      background-color: rgb(68, 0, 255);
+    }
+    label{
+      width: 100px;
+      height: 100%;
+      background-color: green;
+      /* 行內區塊 */
+      display: inline-block;
+    }
+    /* flex:1;把剩餘的空間都給他 */
+  </style>
+</head>
+<body>
+  <div class="box-big">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box-input">
+      <label for="">姓名</label>
+      <input type="text">
+    </div>
+    <div class="box-input">
+      <label for=""></label>
+      <input type="text">
+    </div>
+  </div>
+</body>
+</html>

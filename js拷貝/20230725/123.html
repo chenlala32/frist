@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  姓名 <input type="text" id="name">
+  <button class="add">新增</button>
+  <button class="query">查詢</button>
+  <button class="delete">刪除</button>
+  <div>查詢結果:<span class="result">查到,在第2筆</span></div>
+  <div class="all">全部資料</div>
+  <script>
+    let text = document.querySelector('#name');
+    let addBtn = document.querySelector('.add');
+    let queryBtn = document.querySelector('.query');
+    let deleteBtn = document.querySelector('.delete');
+    let all = document.querySelector('.all');
+    let dataAll = [];
+    addBtn.addEventListener('click', function () {
+      dataAll.push(nameTmp.value);
+      console.log(dataAll);
+      showAll();
+    });
+    queryBtn.addEventListener('click', function () {
+      let myInbox = dataAll.lastIndexOf(nameTmp.value);
+      console.log(myInbox);
+      if (myInbox == -1) {
+        result.innerHTML = '找不到資料'
+      } else {
+        result.innerHTML = `找到資料 在第 ${myInbox + 1}`
+      }
+    });
+    deleteBtn.addEventListener('click', function () {
+      let myInbox = dataAll.lastIndexOf(nameTmp.value);
+      console.log(myInbox);
+      if (myInbox == -1) {
+        result.innerHTML = '找不到資料,無法刪除'
+      } else {
+        dataAll.splice(myInbox,1);
+        showAll();
+      }
+    });
+   function showAll(){
+    all.innerHTML = '';
+    dataAll.forEach(function(item,index){
+      all.innerHTML += `第 ${index + 1} 筆： ${item} `
+    })
+   }
+  </script>
+</body>
+
+</html>

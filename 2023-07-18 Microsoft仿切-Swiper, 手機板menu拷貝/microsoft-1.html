@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/microsoft-1.css">
+    <link rel="stylesheet" href="./css/swiper-1.css">
+</head>
+
+<body>
+    <nav class="container-normal">
+        <div class="logo"></div>
+        <!-- 中間那一段後來會隱藏 -->
+        <ul class="pc-menu">
+            <li>ABCDE</li>
+            <li>ABCDE</li>
+            <li>ABCDE</li>
+            <li>ABCDE</li>
+            <li>ABCDE</li>
+            <li>ABCDE</li>
+        </ul>
+
+        <ul class="func-menu">
+            <!-- 會先隱藏漢堡條按鈕與menu  -->
+            <li class="ham-small container-normal">
+                <input type="checkbox" id="ham-menu-switch" hidden>
+                <label for="ham-menu-switch" class="ham-menu"></label>
+                <ul class="mobile-menu">
+                    <li tabindex="1">AAAAA</a></li>
+                    <li tabindex="1">BBBB</li>
+                    <li tabindex="1">CCCCC</li>
+                    <li tabindex="1">EEEEE</li>
+                    <li tabindex="1">GGGGGGG</li>
+
+                    <input type="checkbox" id="chevron-soft-switch" class="chevron-switch" hidden>
+                    <label for="chevron-soft-switch" class="chevron-label">
+                        <li>
+                            <span>軟體</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </li>
+
+                        <div class="sub-dropdown-menu">
+                            <ul>
+                                <li>XXXXX</li>
+                                <li>YYYYY</li>
+                                <li>ZZZZZ</li>
+                                <li>EEEEE</li>
+                                <li>GGGGGGG</li>
+                            </ul>
+                        </div>
+                    </label>
+
+                    <input type="checkbox" id="chevron-2nd-switch" class="chevron-switch" hidden>
+                    <label for="chevron-2nd-switch" class="chevron-label">
+                        <li>
+                            <span>個人電腦和設備</span>
+                            <i class="fa-solid fa-chevron-down"></i>
+                            <i class="fa-solid fa-chevron-up"></i>
+                        </li>
+                        <div class="sub-dropdown-menu">
+                            <ul>
+                                <li>XXXXX</li>
+                                <li>YYYYY</li>
+                                <li>ZZZZZ</li>
+                                <li>EEEEE</li>
+                                <li>GGGGGGG</li>
+                            </ul>
+                        </div>
+                    </label>
+
+
+                </ul>
+            </li>
+            <li class="all-microfort">
+                <span>所有 Microsoft</span>
+                <img src="" alt="">
+                <!-- 先隱藏 -->
+                <!-- <div>
+                    <div>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                    <div>檢視網站</div>
+                </div> -->
+
+            </li>
+            <li class="searching-something">
+                <img src="../sss.jpg" alt="x">
+                <span class="hide-text">搜尋</span>
+            </li>
+            <li class="cart">
+                <a href="">
+                    <span class="hide-text">購物車</span>
+                    <!-- 圖片或icon字元 -->
+                    <img src="" alt="x">
+                </a>
+            </li>
+            <li class="login">
+                <a href="">
+                    <img src="" alt="x">
+                    <span class="hide-text">登入</span>
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+    <header>
+        <!-- Swiper -->
+        <div id="my-swiper-1" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide my-swiper-slide-1">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="./img/02-1_VP5-1920x600.avif">
+                        <source media="(min-width: 1084px)" srcset="./img/02-1_VP4-1399x600.avif">
+                        <source media="(min-width: 860x)" srcset="./img/02-1_VP3-1083x600.avif">
+                        <source media="(min-width: 540px)" srcset="./img/02-1_VP2-859x540.avif">
+                        <img src="./img/02-1_VP2-859x540.avif" alt="">
+                    </picture>
+                    <div class="main-text">
+                        <h2 class="banner-title">Surface Pro 9</h2>
+                        <div class="banner-paragraph">
+                            平板電腦的彈性和筆記型電腦的效能 — 全都在一台攜帶超方便的裝置
+                        </div>
+                        <div>
+                            <a href="">
+                                <span class="banner-deep-know">深入了解</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide my-swiper-slide-2">
+                    <picture>
+                        <source media="(min-width: 1400px)" srcset="./img/Merch_VP5-1920x600.avif">
+                        <source media="(min-width: 1084px)" srcset="./img/Merch_VP4-1399x600.avif">
+                        <source media="(min-width: 860x)" srcset="./img/Merch_VP2-859x540.avif">
+                        <source media="(min-width: 540px)" srcset="./img/Merch_VP2-859x540.avif">
+
+                        <img src="./img/Merch_VP2-859x540.avif" alt="">
+                    </picture>
+                    <div class="main-text">
+                        <h2 class="banner-title">Microsoft 365</h2>
+                        <div class="banner-paragraph">
+                            使用 Microsoft 365 應用程式實現創意想法、提高線上和離線安全，並專注於最重要的事。
+                        </div>
+                        <div>
+                            <a href="">
+                                <span class="banner-deep-know">深入了解</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </header>
+    <main>
+        <section class="main-choice  container-normal">
+            <div class="one-choice">
+                <a href="">
+                    <img src="./img/Microsoft-365.webp" alt="">
+                    <div>選擇您的 Microsoft 365</div>
+                </a>
+            </div>
+            <div class="one-choice">
+                <a href="">
+                    <img src="./img/surface-120x120.webp" alt="">
+                    <div>選擇您的 Microsoft 365</div>
+                </a>
+            </div>
+            <div class="one-choice">
+                <a href="">
+                    <img src="./img/Microsoft-365.webp" alt="">
+                    <div>選擇您的 Microsoft 365</div>
+                </a>
+            </div>
+        </section>
+        <section class="four-card container-normal">
+            <div class="one-card">
+                <a href="">
+                    <img src="./img/four-card-img/Xbox-Series-X-1.webp" alt="">
+                    <div class="title">assasa</div>
+                    <div class="content">zxzxzxzxzx</div>
+                    <p>選購...X > </p>
+                </a>
+            </div>
+            <div class="one-card">
+                <a href="">
+                    <img src="./img/four-card-img/AI-No-Text-1.webp" alt="">
+                    <div class="title">sasa</div>
+                    <div class="content">asasas</div>
+                    <p>選購...X > </p>
+                </a>
+            </div>
+            <div class="one-card">
+                <a href="">
+                    <img src="./img/four-card-img/Xbox-Series-X-1.webp" alt="">
+                    <div class="title">asassas</div>
+                    <div class="content">asas</div>
+                    <p>選購...X > </p>
+                </a>
+            </div>
+            <div class="one-card">
+                <a href="">
+                    <img src="./img/four-card-img/GlobalLaunch-1.jpg" alt="">
+                    <div class="title"></div>
+                    <div class="content"></div>
+                    <p>選購...X > </p>
+                </a>
+            </div>
+        </section>
+        <section>
+            <div class="container-normal">
+                <!-- Swiper -->
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(min-width: 1400px)" srcset="./img/02-1_VP5-1920x600.avif">
+                                <source media="(min-width: 1084px)" srcset="./img/02-1_VP4-1399x600.avif">
+                                <source media="(min-width: 860x)" srcset="./img/02-1_VP3-1083x600.avif">
+                                <source media="(min-width: 540px)" srcset="./img/02-1_VP2-859x540.avif">
+                                <img src="./img/02-1_VP2-859x540.avif" alt="">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(min-width: 1400px)" srcset="./img/Merch_VP5-1920x600.avif">
+                                <source media="(min-width: 1084px)" srcset="./img/Merch_VP4-1399x600.avif">
+                                <source media="(min-width: 860x)" srcset="./img/Merch_VP2-859x540.avif">
+                                <source media="(min-width: 540px)" srcset="./img/Merch_VP2-859x540.avif">
+
+                                <img src="./img/Merch_VP2-859x540.avif" alt="">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section>四張圖片</section>
+    </main>
+    <footer>
+        <div class="container-full">
+            <div class="footer-menu">
+                <!-- (ul>li{ABCDE}*5)*6 -->
+                <ul>
+                    <p>最新動向</p>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                </ul>
+                <ul>
+                    <p>title</p>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                </ul>
+                <ul>
+                    <p>title</p>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                </ul>
+                <ul>
+                    <p>title</p>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                </ul>
+                <ul>
+                    <p>title</p>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                </ul>
+                <ul>
+                    <p>title</p>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                    <li>ABCDE</li>
+                </ul>
+
+            </div>
+            <div class="footer-nav">
+
+            </div>
+        </div>
+
+    </footer>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

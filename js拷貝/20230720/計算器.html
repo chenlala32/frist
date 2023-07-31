@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input{
+      width: 100px;
+      height: 100px;
+
+    }
+    button{
+      width: 80px;
+      height: 20px;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <input type = "text" id = "num-1">
+  + 
+  <input type = "text" id = "num-2">
+  =
+  <button id = "add-btn">+計算</button>
+  <button id = "sub-btn">+計算</button>
+  <button id = "multi-btn">+計算</button>
+  <button id = "devide-btn">+計算</button>
+<script>
+  // 1.取的第一個數值 第二數值
+  // 2.按計算紐 做加法
+  // 3.結果顯示
+  var input_1 = document.querySelector('#num_1');
+  var input_2 = document.querySelector('#num_2');
+  //取得加法按鈕元件
+  var addBtn = document.querySelector('#add-btn');
+  var result = document.querySelector('#result');
+   
+  console.log(input_1);
+  console.log(input_2);
+
+  // var num_1 = input_1.value;
+  // var num_2 = input_2.value;
+  // var result = 0;
+  // console.log('num_1=',num_1);
+  // console.log('num_2=',num_2);
+  //在計算加法的按鈕上加上一個”按下“的監聽事件
+  // var addBtn = document.querySelector('#add-btn');
+  // addBtn.addEventListener('click',function(){
+  //  result = num_1 + num_2;
+  // })
+  addBtn.addEventListener('click',function(){
+    // alert(input_1.value)
+    // alert(input_1.value)
+    // parseInt()函數 整數字串轉整數
+    result.innerHTML = input_1.value * 1 + input_2.value * 1;
+  })
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    height: 3000px;
+  }
+  #nav {
+    position: fixed;
+    /* background-color: yellow; */
+    width: calc(80% - 10px *2);
+    /* height: 100px; */
+    margin-left: 10%;
+    padding: 10px;
+  }
+  #logo{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+   border-radius: 50%;
+   background-image: url(../img照片/風景3.jpeg);
+   background-size:cover;
+   background-repeat: no-repeat;
+   float: left;
+  }
+  #nav-btn-all{
+    /* background-color: blue; */
+    /* width: 400px;
+    height: 100px; */
+    float: right;
+    padding: 10 px 0;
+  }
+  .nav-btn{
+    width: 100px;
+    height: 60px;
+    background-color: pink;
+    float:left;
+    font-size: 24px;
+    text-align: center;
+    line-height: 60px;
+    font-weight: bold;border-radius: 10px;
+    /* margin-top: 10px; */
+    margin-right: 30px;   
+  }
+  a{
+    /* 不出現文字修飾 */
+    text-decoration: nono;
+  } 
+  /* a:link 尚未拜訪過 */
+  a:link{
+    background-color: red;
+  }
+  /* a:visited 拜訪過 按過 */
+  a:visited{
+    background-color:yellow;
+    color: red;
+  }
+  /* a:hover當滑鼠移到物件上方 會產生效果 */
+  a:hover{
+    background-color: chartreuse;
+    color: darkorange;
+  }
+  a:active{
+    background-color: black;
+    color: white;
+  }
+  #container {
+    background-color: aqua;
+    width: 80%;
+    height: 300px;
+    margin: auto;
+    padding-top: 100px;
+  }
+  .banner {
+    width: 100%;
+    height:calc(50vh - 50px);
+    background-color: blue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: calc(50vh - 50px);
+    position: relative;
+  }
+  #banner-1-anchor{
+    position: absolute;
+  }
+  #banner-1 {
+    background-image: url(../img照片/風景3.jpeg);  
+    /* position: relative;} */
+  }
+  .mask{
+    background-color: black;
+    width: 100%;
+    height: 50vh;
+    opacity: 0.5;
+    position: relative;
+    /* bottom: 0; */
+  }
+  .btn{
+  width: 150px;
+  height: 50px;
+  background-color: white;
+  font-size: 32px;
+  text-align: center;
+  border-radius: 5px;
+  position: absolute;
+  top: calc(50% - 25px);
+  left: calc(50% - 75px);
+  line-height: 50px;
+  transform: translate(-50%, -50%);
+  }
+  #benner-1-anchor{
+    position: absolute;
+
+  }
+  #top-1{
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50%;
+  }
+</style>
+</head>
+<body>
+  <div id="nav">
+    <div id="logo"></div>
+    <div id="nav-btn-all">
+     <!-- <div class="nav-btn">第一區</div>
+    <div class="nav-btn">第二區</div>
+    <div class="nav-btn">第三區</div>  -->
+    <!-- 超連結   
+    a:anchor錨點    
+    href: 錨點的目的地 連結的位置網址
+    herf: hypertext reference
+  -->
+    <a href=""></a>
+    <a href="#banner-1-anchor"class="nav-btn">第一區</a>
+    <a href="#banner-2-anchor"class="nav-btn">第二區</a>
+    <a href="#banner-3-anchor"class="nav-btn">第三區</a>
+    </div>
+  </div>
+<div id="container">
+    <div id="banner-1" class="banner">
+      <div class="mask">
+        <div class="btn">第一區</div>
+      </div>
+    </div>
+
+  </div>
+  <div id="container">
+    <div id="banner-1" class="banner">
+      <div id="banner-1-anchor"></div>
+      <div class="mask">
+        <div class="btn">第一區</div>
+      </div>
+    </div>
+  </div>
+    <!-- <div id="top-1"><a href="#">TOP</a></div> -->
+    <!-- href="#"表示連到自己這一頁 自動到頂端
+    herf="" 也未有相同效果
+    -->
+    <!-- 要用 <a href=""></a>去包住<div></div>-->
+    <a href=""><div id="top-1">top</div></a>
+
+</html>

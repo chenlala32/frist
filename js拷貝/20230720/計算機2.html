@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    input{
+      width: 100px;
+      height: 100px;
+
+    }
+    #button{
+      width: 80px;
+      height: 20px;
+      font-size: 15px;
+      line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+  <input type = "text" id = "num-1">
+  and
+  <input type = "text" id = "num-2">
+  =
+  <sapn id="result"></sapn>
+  <br>
+  <button id = "add-btn">+計算</button>
+  <button id = "sub-btn">-計算</button>
+  <button id = "multi-btn">x計算</button>
+  <button id = "devide-btn">/計算</button>
+
+  <script>
+    var addBtn = document.querySelector('#add-btn');
+    var subBtn  = document.querySelector('#sub-btn');
+    var multiBtn = document.querySelector('#multi-btn');
+    var devideBtn = document.querySelector('#devide-btn');
+    var input_1 = document.querySelector('#num-1');
+    var input_2 = document.querySelector('#num-2');
+    var result = document.querySelector('#result');
+
+    addBtn.addEventListener('click',function(){
+    result.innerHTML = (input_1.value * 1) + (input_2.value * 1);
+  })
+  subBtn.addEventListener('click',function(){
+    result.innerHTML = (input_1.value * 1) - (input_2.value * 1);
+  })
+  multiBtn.addEventListener('click',function(){
+    result.innerHTML = (input_1.value * 1) * (input_2.value * 1);
+  })
+  devideBtn.addEventListener('click',function(){
+    result.innerHTML = (input_1.value * 1) / (input_2.value * 1);
+  })
+  </script>
+</body>
+</html>

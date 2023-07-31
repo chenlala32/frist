@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- ㄑfrom表單 -->
+  <form>
+  <!-- 表單元素   value是預設文字 -->
+  姓名:<input type="text" value="1000">
+  <!-- 換行 -->
+  <br>
+  <label for="my name">輸入姓名1</label>
+  <input id="my name" type="text" value="1000">
+  <br>
+  <label for="my name">
+    <div>輸入姓名2gdwdjiejwf</div>
+    <input id="my name" type="text" value="1000">
+  </label>
+  <br>
+  <!-- radiobox -->
+  <!-- &nbsp;代表空白 -->
+  性別:&nbsp;<label for="boy">男性</label>
+  <!-- type="radio"用再多則一 -->
+  <!-- 當name相同時就只能多則一 -->
+  <input type="radio" name="gender"id="boy">
+  <label for="boy">&nbsp;&nbsp;&nbsp;女性</label>
+  <input type="radio" name="gender"id="boy">
+  <br>
+  年齡: <input type="number" min="0" max="200">
+  <br>
+  <!-- checkbox -->
+  午餐：<input type="checkbox" id="beef"><label for="beef">牛肉</label>
+      <input type="checkbox">羊肉
+      <input type="checkbox">豬肉
+      <input type="checkbox">雞肉
+      <input type="checkbox">素食
+      <br>
+      電話：
+      <input type="tel">
+      <br>
+      電子郵件：
+      <input type="email">
+      <br>
+      密碼：
+      <input type="password">
+      <br>
+      上傳檔案：
+      <input type="file">
+      <!-- 下拉式選單 -->
+      <select>
+        <option value="01">台北</option>
+        <option value="04">台中</option>
+        <option value="07">高雄</option>
+      </select>
+      <br>
+      <br>
+      <button>送出</button>
+    </form>
+</body>
+
+</html>

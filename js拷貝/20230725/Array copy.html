@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //Array:陣列 ＝>暫時儲存資料
+    let a =[];//空陣列
+    let b =[1,2,3]//數字陣列
+    let boxALL =['box1','box2','box3'];//字串陣列
+    let mixArray =[1, 'box1',true];//混合式
+    let score = [100,30,50,90,78];//學生分數
+    const colors = ['100', '200', '300'];
+    const count = colors.push('400','500');
+
+
+    console.log(score);
+    console.log(score[0],score[1],score[5]);
+    let stud1 = score[0];//取出陣列資料放入變數中
+    let toto1 = score[0] + score[1]+score[2] + score[3];
+    total = 0;
+    for (let i = 0; i < 5; i++) {
+    total += score[i];     
+    }
+    console.log('total 2 =>',total);
+  </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    
+    body{
+      margin: 0;
+    }  
+    button{
+
+    }
+    .timer{
+      width: 100px;
+      height: 100px;
+      color:blue;
+      font-size: 30px;
+      background-color: burlywood;
+      text-align: center;
+      line-height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">aaa
+    <div class="box">bbb</div>
+    <div class="box">ccc</div>
+    <div class="box">ddd</div>
+    <div class="box answer">eee</div>
+    .
+  </div>
+  <script>
+    start =document.querySelector('.start');
+    continue2 = document.querySelector('.contiune2');
+    pause = document.querySelector('.pause');
+    giveUp = document.querySelector('.give-up');
+    homepage =document.querySelector('.homepage');
+    gamepage =document.querySelector('.gamepage');
+
+    start.addEventListener('click',() =>{
+      homepage.style.display ='flex';
+      gamepage.style.display ='none';
+    })
+
+
+
+    let level =2;
+    let size =100 / level;
+  
+    
+    let timer =document.querySelector('.timer');
+    setInterval(countDown,100);
+    let second =10;
+    function countDown() {
+      timer.innerHTML = seconds;
+      seconds--;  
+      console.log(seconds,'jjjjjjj');
+      if (seconds < -1) {
+        clearInterval(timerMachine);
+        alert('時間到');
+      }
+    }
+
+  </script>
+</body>
+</html>

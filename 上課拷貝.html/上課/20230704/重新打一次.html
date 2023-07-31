@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      height: 3000px;
+    }
+
+    .pt {
+      width: 100%;
+      height: 100vh;
+      background-color: aqua;
+      background-image: url(../img照片/風景1.webp);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+
+    }
+
+    .mask {
+      width: 100%;
+      height: 100%;
+      background-color: aliceblue;
+      opacity: 0.5;
+    }
+
+    .button {
+      width: 80px;
+      height: 35px;
+      background-color: cornsilk;
+      position: absolute;
+      top: calc(50% - 40px);
+      left: calc(50% - 40px);
+      color: crimson;
+      text-align: center;
+      line-height: 35px;
+      font-size: 29px;
+    }
+
+    .text {
+      font-size: 20px;
+      background-color: blue;
+      width: calc(100% - 30px*2);
+      /* height: 100px; */
+      padding: 30px;
+    }
+
+    .title {
+      text-align: center;
+    }
+
+    .inside-word {
+      text-align: justify;
+      padding: 20px;
+    }
+
+    .inside-word::first-letter {
+      font-size: 25px;
+      color: deeppink;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <div class="pt">
+      <div class="mask"></div>
+      <div class="button">Travel</div>
+    </div>
+    <div class="text">
+      <div class="title">Travel</div>
+      <div class="inside-word">Parallax scrolling is a web site trend where the background content is moved at a
+        different speed than the foreground content while scrolling. Nascetur per nec posuere turpis, lectus nec libero
+        turpis nunc at, sed posuere mollis ullamcorper libero ante lectus, blandit pellentesque a, magna turpis est
+        sapien duis blandit dignissim. Viverra interdum mi magna mi, morbi sociis. Condimentum dui ipsum consequat
+        morbi, curabitur aliquam pede, nullam vitae eu placerat eget et vehicula. Varius quisque non molestie dolor,
+        nunc nisl dapibus vestibulum at, sodales tincidunt mauris ullamcorper, dapibus pulvinar, in in neque risus odio.
+        Accumsan fringilla vulputate at quibusdam sociis eleifend, aenean maecenas vulputate, non id vehicula lorem
+        mattis, ratione interdum sociis ornare. Suscipit proin magna cras vel, non sit platea sit, maecenas ante augue
+        etiam maecenas, porta porttitor placerat leo.</div>
+    </div>
+  </div>
+</body>
+
+</html>

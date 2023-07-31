@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div{
+      color: white;
+      font-size: 40px;
+      /* text-shadow: 10px ; */
+      font-weight: bold;
+      /* 右移 下移 模糊程度 */
+      text-shadow:1px 2px 5px blue;  
+    }
+    /* 文字多陰影 */
+   .multi-shadow{
+      font-size: 32px;
+      font-weight: bold;
+    text-shadow: 0px 0px 3px red, 0px 0px 5px red 0px 0px 5px;
+    }
+     /* 中空字 */
+   .empty-shadow{
+      font-size: 32px;
+      font-weight: bold;
+      color:white;
+    text-shadow: -1px 0px black ,0px -1px black,1px 0px black,0px 0px black;
+    }
+  </style>
+</head>
+<body>
+  <div>柳橙汁柳橙汁柳橙汁柳橙汁柳橙汁柳橙汁柳橙汁柳橙汁</div>
+  <div class="multi-shadow">蘋果汁</div>
+  <div class="empty-shadow">芭樂汁</div>
+
+</body>
+</html>

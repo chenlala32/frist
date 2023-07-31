@@ -1,0 +1,15 @@
+  //定義變數 variable
+  $size: 50px;
+  $text-color: red;
+  $text-color-title:blue
+
+  bady{
+    font-size : $size;
+    color:$text-color;
+  }
+  .tilte {
+    // 局部變數
+    $size-local: 24px
+    font-size: $size-local;
+    
+  }

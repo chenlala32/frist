@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /*用.去好找class */
+.box-100{
+    background-color: rgb(215, 250, 236);
+    width: 100px;
+    height: 100px;
+    border: 1px solid black
+    ;
+}
+.box-red{
+    background-color: red;
+}
+.box-green{
+    background-color:green;
+}
+    </style>
+</head>
+<body>
+    <!-- .box*100*3 -->
+    <!-- ctrl+D.將.mark.一樣的東西改變 -->
+    <!-- class.希望訂一個樣式給許多標籤使用 -->
+    <!-- 讓樣式可以重複使用 -->
+    <!-- 命名規格與id同。差別在於用.與# 在css上-->
+    <!-- id與class的差別:
+    一個標籤只能有唯一的id
+    一個標籤可以有很多的class-->
+    <!-- 一個標籤可以同時有id與class -->
+
+    <div class="box-100 box-green"></div>
+    <div class="box-100 box-red"></div>
+    <div class="box-100 box-green"></div>
+    <!-- 同時產生id與class的方法 -->
+    <!-- #box-.box-red -->
+    <div id=box- class="box-100 box-red"></div>
+    <!-- 產生２個class=box-green.與3個class -->
+    <!-- .box-100.box-green*2+.box-100.box-red*3 -->
+    <div class="box-100 box-green"></div>
+    <div class="box-100 box-green"></div>
+    <div class="box-100 box-red"></div>
+    <div class="box-100 box-red"></div>
+    <div class="box-100 box-red"></div>
+    <div class="box-100 box-red"></div>
+    <div class="box-100 box-green"></div>
+    <div class="box-100 box-green"></div>
+    <div class="box-100 box-green"></div>
+    <div class="box-100 box-green"></div>
+
+    <div class="box-100 box-red"></div>
+    <box-100 class="box-green"></box-100>
+    <div class="box-100 box-red"></div>
+    <box-100 class="box-green"></box-100>
+</body>
+</html>

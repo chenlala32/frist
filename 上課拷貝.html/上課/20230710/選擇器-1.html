@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    /* id選擇器 */
+    #my-id{
+      color: red;
+    }
+    /* class選擇器 */
+    .my-id{
+      color: blue;
+    }
+    /* 標籤選擇器 */
+    h1{
+      color: chartreuse;
+    }
+    /* 空一格 後代選擇器  後代包含兒子孫子等等*/
+    h1 div{
+      background-color: aqua;
+    }
+    /* 子代選擇器(所有子代) */
+    .my-id > .box-1{
+      background-color: deeppink;
+    }
+    /* 兄弟選擇器＝>找相鄰(最接近的)的兄弟 只能往右或往下找 無法往前往左找 */
+  </style>
+</head>
+<body>
+  <div id="my-id">s妳好id</div>
+  <div class="my-id">妳好class
+    <div class="box-1">兒
+      <div class="box-1">孫
+        <div class="box-1">曾孫
+          
+        </div>
+      </div>
+    </div>
+    <div class="box-1">我是兒子</div>
+  </div>
+  <h1>妳好標籤
+    <p>妳好</p>
+    <div>後代選擇器</div>
+  </h1>
+</body>
+</html>

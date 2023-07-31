@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //邏輯運算子
+    //＆＆且(and)
+    //||或(or)
+    //！不是...(not)相反意思 ＝>例如:!=(比較運算子上)
+    //let也是宣告變數的方式=>盡量用let宣告變數比較不容易出問題
+    //const 設置個常數=>常數就是永遠不會再變的數
+    let a =true;//1
+    let b=false;//0
+    const c=false;//0
+    const d=true;//1
+    console.log(a && b && ! c || d);//1x0x1+1=1>0=>true
+    console.log(a && !b  ||c || d);//1x1+0+1=2>0=>true
+    console.log(!a && b && c || d);//0x0x0+1=1>0=>true
+    console.log(!a && b && c || d);
+    console.log(!a && b && c || d);
+    console.log(!a && b && c || d);
+  </script>
+</body>
+</html>

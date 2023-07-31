@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      /* width: 100%;
+      height: 100vh; */
+      margin: 0;
+
+    }
+
+    #nav {
+      width: 100%;
+      height: 100px;
+      background-color:rgb(0,94,255);
+      float: left;
+      position: relative;
+    }
+
+    #logo {
+      width: 80px;
+      height: 80px;
+      
+      /* margin: auto; */
+      /* margin-top: 100px; */
+      margin: 10px auto 5%;
+      background-image: url(../img照片/6C192993-FCFA-4B3B-8D70-24FF9BC183B2.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      border-radius: 50%;
+      margin: 10PX auto 0;
+     
+    }
+    #nav-btn-all {
+      background-color: blueviolet;
+      color: crimson;
+      width: 150px;
+      height: 170px;
+      left: 10px;
+      bottom: -170px;
+      position: absolute;
+      border-radius: 4%;
+       display: none; 
+    }
+    .nav-btn {
+      background-color: forestgreen;
+      width: 100px;
+      height: 40px;
+      border: 2px solid black;
+      top: 38px;
+      margin: 10px auto 0;
+      color: chartreuse;
+      border-radius: 10px;
+      font-size: 21px;
+      text-align: center;
+      line-height: 40px; 
+    }
+    .nav-btn:hover {
+      background-color: black;
+      
+      opacity: 0.5;
+
+    }
+
+    .nav-btn:active {
+      background-color: white;
+      opacity: 0.5;
+
+    }
+
+    #container {
+      width: 100%;
+      height: calc(100vh - 100px);
+      background-color: antiquewhite;
+      float: left;
+      /* padding-top: calc((100vh - 100px - 700PX)/2); */
+    }
+
+    #content {
+      width: 100%;
+      height: 100%;
+      /* background-color: rgba(0, 255, 255, 0); */
+      margin: auto;
+    }
+
+    .content-img {
+      height: 30vh;
+      float: left;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+       /* transition: transform 1.3s; */
+      /* border-radius :1.3s; */
+      transition-duration: -5s;
+    }
+
+    .content-img:hover {
+      transform: scale(1.1);
+      border-radius: 10px;
+    }
+
+
+    #img-1 {
+      background-color: blue;
+      width: 100%;
+      background-image: url(../img照片/7195625944_5a47ddbbef_b.jpg)
+    }
+
+    #img-2 {
+      background-color: red;
+      width:100%;
+      /* margin-left: 10px;
+      margin-right: 10px; */
+      /* margin: 0 10px; */
+      background-image: url(../img照片/uFfRoNDKBSTrW01v0T3gEoDtomyCdB7AbPx7ZAtZ.jpg)
+    }
+
+    #img-3 {
+      background-color: green;
+      width: 100%;
+
+      background-image: url(../img照片/風景1.webp)
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* *{
+      box-sizing: border-box;
+    } */
+    .ham-menu {
+      background-color:rgb(0,9,240);
+      width: 100px;
+      height: 100px;
+      position: relative;
+      /* 由原本 行內層級 (inline)轉換成 區塊層級(block) */
+      display: block;
+      float: left;
+    }
+
+    /* xxx yyy 空格代表所有後代 xxx得後代yyy */
+    .ham-menu .line {
+      width: 80%;
+      height: 10px;
+      background-color: rgb(0, 255, 94);
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      /* 變換動作時間(變長或變短) */
+      transition: 1s;
+
+    }
+
+    .ham-menu #line-1 {
+      top: 25%;
+
+    }
+
+    .ham-menu #line-2 {
+      top: 50%;
+
+
+    }
+
+    .ham-menu #line-3 {
+      top: 75%;
+
+    }
+
+    /* 當漢堡menu被選案（打勾)時 ＋ 最近的兄弟裡面的後代*/
+    #ham-menu-switch:checked+.ham-menu #line-1 {
+      /* background-color: blue; */
+      /* transform: translate(-50%, -50%) rotate(45deg); */
+      transform: translate(-50%, -50%)rotate(45deg);
+      /* transform: rotate(45deg); */
+      top: 50%;
+      left: 50%;
+    }
+
+    /* +號 為選最近的行列(兄弟) “而且－不能選前面的兄弟 */
+    #ham-menu-switch:checked+.ham-menu #line-2 {
+      /* 隱藏 */
+      display: none;
+    }
+
+    #ham-menu-switch:checked+.ham-menu #line-3 {
+      /* transform: rotate(-45deg); */
+      top: 50%;
+      transform: translate(-50%, -50%)rotate(-45deg);
+    }
+    #ham-menu-switch:checked~ #nav-btn-all{
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="nav">
+    <input type="checkbox" id="ham-menu-switch" hidden>
+    <!-- 漢堡menu得本體 -->
+    <label for="ham-menu-switch" class="ham-menu">
+      <div id="line-1" class="line"></div>
+      <div id="line-2" class="line"></div>
+      <div id="line-3" class="line"></div>
+    </label>
+    <div id="logo"></div>
+    <div id="nav-btn-all">
+
+      <a href="https://www.youtube.com/">
+        <div id="nav-btn-1" class="nav-btn">YouTube</div>
+      </a>
+      <a href="https://www.backpackers.com.tw/">
+        <div id="nav-btn-2" class="nav-btn">Backpack</div>
+      </a>
+      <a href="https://www.google.com/travel/flights?hl=zh-TW">
+        <div id="nav-btn-3" class="nav-btn">flight</div>
+      </a>
+    </div>
+  </div>
+  <div id="container">
+    <div id="content">
+      <div id="img-1" class="content-img"></div>
+      <div id="img-2" class="content-img"></div>
+      <div id="img-3" class="content-img"></div>
+    </div>
+</body>
+
+</html>

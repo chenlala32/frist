@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    let cityAll = ['基隆市', '新北市', '臺北市', '桃園市', '新竹市', '新竹縣', '苗栗縣', '臺中市', '南投縣', '彰化縣', '雲林縣', '嘉義市', '嘉義縣', '臺南市', '高雄市', '屏東縣', '宜蘭縣', '花蓮縣', '臺東縣', '澎湖縣', '金門縣', '連江縣'];
+    cityAll.forEach(function (city, index) {
+      console.log(index, city);
+    })
+    cityAll.forEach((city, index) => {
+      console.log(index, city);
+    })
+
+
+    cityAll.forEach(showCity);
+
+    function showCity(city, index) {
+      console.log(index, city);
+    }
+
+    //======================================
+    const numbers1 = [45, 4, 9, 16, 25];
+    const numbers2 = numbers1.map(getDouble);
+    function getDoubl(item, index) {
+      return item * 2;
+    }
+    console.log(numbers1, numbers2);
+    //================過濾陣列========
+    const numbers = [45, 4, 9, 16, 25];
+    const over18 = numbers.filter(myFunction);
+
+    function myFunction(value) {
+      return value > 18;
+    }
+    console.log(numbers,over18);
+    //扁平化
+    let myArr =[[1,2],[3,4],[5,6],[1,2]];
+    let newArr =myArr.flat();
+    console.log(999,myArr,newArr);
+    myArr =[1,2,3,4,5,6,[7],[8]];
+    newArr =myArr.flatMap(x => x * 2);
+    console.log(888,myArr,newArr);
+  </script>
+</body>
+
+</html>

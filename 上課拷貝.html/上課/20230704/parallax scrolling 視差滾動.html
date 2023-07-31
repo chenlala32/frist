@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      height: 3000px;
+      font-family:Loto;
+    }
+
+
+    #banner-1 {
+      width: 100%;
+      height: 100vh;
+      background-color: aqua;
+      background-image: url(../img照片/風景2.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+       position: relative;
+    }
+    #botten-1{
+      background-color: black;
+      width: 400px;
+      height: 80px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      color: white;
+      text-align: center;
+      font-size: 32px;
+      border-radius: 5px;
+      letter-spacing: 5px;
+      line-height: 80px;
+    }
+    #content-1 {
+      background-color: yellow;
+      width: calc(100% - 50px*2);
+      /* height: 300px; */
+      padding: 50px;
+    }
+    #title{
+      text-align: center;
+    }
+    #text-1 {
+      text-align: justify;
+    }
+    #text-1{
+      font-size: 24px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <!-- /* <pre>
+    1.有圖片區與內文
+    2.圖片區內有小招牌
+    3.內文區有title與內容
+    4.內文區有間距
+    5.圖片有些許模糊(透明度)
+    6.有視差滾動效果
+  </pre> */ -->
+  <div>
+    <div id="banner-1">
+      <div id="botton-1">Travel</div>
+    </div>
+    <div id="content-1">
+      <div id="title">Travel</div>
+      <div id="text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Magni omnis reprehenderit, possimus officiis tempora soluta quia excepturi.
+        Laborum vel, rem deserunt magnam dolor sed labore voluptas consectetur.
+        Doloribus, maiores aspernatur.</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .px-16{
+      font-size: 16px;
+    }
+    .px-20{
+      font-size: 20px;
+    }
+    .px-24{
+      font-size: 24px;
+    }
+    .px-32{
+      font-size: 32px;
+    }
+
+
+    .em-1dot2{
+      font-size: 1.2em;
+    }
+    .em-1dot2{
+      font-size: 1.2em;
+    }
+    .em-1dot2{
+      font-size: 1.2em;
+    }
+    .em-1dot2{
+      font-size: 1.2em;
+    }  
+    .rem-2{
+      font-size: 1.2rem;
+    } 
+    .percent-120{
+      font-size: 120%;
+    } 
+  </style>
+</head>
+<body>
+  <!-- 1. px 絕對單位  根據像素變化-->
+  <!-- 字體最小12px -->
+  <div class="px-16">16px
+    <div class="px-20">20px
+      <div class="px-24">24px
+        <div class="px-32">32px </div>    
+          
+      </div>      
+    </div>
+  </div>
+<!-- 1.em相對單位  每個子元素的字體大小透過倍數乘以父層
+字體最小12px -->
+  <div class="em-1dot2">1.2em
+    <div class="em-1dot2">1.2em
+      <div class="em-1dot2">1.2em
+        <div class="em-1dot2">1.2em</div>    
+      </div>      
+    </div>
+  </div>
+  <!-- REM 相對單位  每個子元素的字體大小透過"倍數"乘以根元素 所以最內層大小=16*1.2
+  最小0.75rem=12px
+    1rem=16px
+    1.5rem=24px
+    2rem=32px
+    0.875rem=14px
+
+
+-->
+  <div class="rem-2">2rem
+    <div class="rem-2">2rem
+      <div class="rem-2">2rem
+        <div class="rem-2">2rem</div>    
+      </div>      
+    </div>
+  </div>
+
+   <!-- % 百分比相對單位  每個子元素的字體大小透過"倍數"乘以根元素 所以最內層大小=16*1.2-->
+   <div class="percent-120">120percent
+    <div class="percent-120">120percent
+      <div class="percent-120">120percent
+        <div class="percent-120">120percent</div>    
+      </div>      
+    </div>
+  </div>
+</body>
+</html>

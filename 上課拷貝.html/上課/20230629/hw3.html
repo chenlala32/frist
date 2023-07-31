@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  #box-h{
+  width:120px;
+  height:40px;
+  background-color: pink;
+ }
+ #box-b{
+  width:120px;
+  height:80px;
+  background-color: black;
+ }
+ #box-l{
+  width:120px;
+  height:40px;
+  background-color: brown;
+ }
+ #box-b1{
+  width:30px;
+  height:80px;
+  background-color:yellowgreen;
+  float: left;
+ }
+ #box-b2{
+  width:90px;
+  height:80px;
+  background-color:plum;
+  float: right;
+ }
+ #box-b3{
+  width:90px;
+  height:25px;
+  background-color: blue;
+ }
+ #box-b3-1{
+  width:30px;
+  height: 25px;
+  background-color: rgb(247, 8, 4);
+  
+ }
+ #box-b3-2{
+  width:60px;
+  height: 25px;
+  background-color:blueviolet;
+  float:right;
+ 
+ }
+ #box-b4{
+  width:90px;
+  height:25px;
+  background-color: burlywood;
+ }
+ #box-b4-1{
+  width:60px;
+  height:25px;
+  background-color: rgb(95, 102, 163);
+  
+ }
+
+  
+  
+
+ 
+ #box-b5{
+  width:90px;
+  height:30px;
+  background-color: green;
+
+ }
+ #box-b5-1{
+  width:30px;
+  height:30px;
+  background-color: pink;
+ }
+  </style>
+</head>
+<body>
+  <div id="box-h"></div>
+  <div id="box-b">
+    <div id="box-b1"></div>
+    <div id="box-b2">
+      <!-- 裡面有漲 外面是父層（上面） 裡面是子層 -->
+      <div id="box-b3">
+       <!-- 子層 （下面） -->
+       <div id="box-b3-2">555</div>
+        <div id="box-b3-1">7</div>
+        
+      </div>
+      <!--box-b4 的父曾跟子層  -->
+      <div id="box-b4">
+        <div id="box-b4-1">dwd</div>
+        <div id="box-b4-2"></div>
+        </div>
+      <!-- box-b5 的父曾跟子層 -->
+      <div id="box-b5">
+        <div id="box-b5-1"></div>
+      </div>
+
+    </div>
+
+</div>
+
+  <div id="box-l"></div>
+</body>
+</html>

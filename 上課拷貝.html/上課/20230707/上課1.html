@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .ball{
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: rebeccapurple;
+      /* 動畫名稱 */
+      animation-name: static-ball;
+      /* 執行整個動畫時間 */
+      animation-duration: 10s;
+  }
+@keyframes static-ball{
+  /* xx%代表時間 */
+  0%{
+    /* 在這時間內要做的動作 */
+    background-color: rebeccapurple;
+  }
+  25%{
+    background-color: blue;
+  }
+  75%{
+    background-color: green;
+  }
+  100%{
+    background-color: yellow;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="ball"></div>
+</body>
+</html>

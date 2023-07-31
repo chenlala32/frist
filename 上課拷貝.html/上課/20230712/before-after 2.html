@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    /* 三角形切法 */
+    .box {
+      width: 500px;
+      height: 500px;
+      /* background-color: palevioletred; */
+      margin-bottom: 50px;
+      position: relative;
+    }
+    .box-main::before {
+      content:"";
+      width: 300px;
+      height: 500px;
+      border-width: 100px;
+      border-style: solid;
+      border-top-color:transparent;
+      border-right-color:transparent;
+      border-bottom-color:blue;
+      border-left-color :transparent;
+      position: absolute;
+      left: 100px;
+    }
+    .box-main2::before {
+      content:"";
+      width: 500px;
+      height: 500px;
+      border-width: 100px;
+      border-style: solid;
+      border-top-color:transparent;
+      border-right-color:transparent;
+      border-bottom-color:blue;
+      border-left-color :transparent;
+      position: absolute;
+      top: 300px;
+    }
+    .box-pillar::before {
+      content:"";
+     background-color: crimson;
+      width: 10px;
+      height: 160px;
+      border-width: 20px;
+      border-style: solid;
+      border-top-color:yellow;
+      border-right-color:white;
+      border-bottom-color:yellow;
+      border-left-color :white;
+      position: absolute;
+     left: 100px;
+     top: 150px;
+    }
+    .box-pillar2::before{
+      content:"";
+     background-color: crimson;
+      width: 10px; 
+      height: 160px;
+      border-width: 20px;
+      border-style: solid;
+      border-top-color:yellow;
+      border-right-color:white;
+      border-bottom-color:yellow;
+      border-left-color :white;
+      position: absolute;
+     left: 240px;
+    top: -400px;
+    }
+    .box-pillar3::before{
+      content:"";
+     background-color: crimson;
+      width: 10px; 
+      height: 160px;
+      border-width: 20px;
+      border-style: solid;
+      border-top-color:yellow;
+      border-right-color:white;
+      border-bottom-color:yellow;
+      border-left-color :white;
+      position: absolute;
+    left: 380px;
+    top: -950px;
+    }
+  </style>
+</head>
+<body>
+  <!-- 屋頂 -->
+  
+<div class="box box-main">
+  <div class="box box-main2"></div>
+  
+</div>
+  <!-- 柱子 -->
+  <div class="box box-pillar"></div>
+  <div class="box box-pillar2"></div>
+  <div class="box box-pillar3"></div>
+  <div class="box box-pillar4"></div>
+</body>
+</html>

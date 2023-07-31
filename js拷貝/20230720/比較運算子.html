@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+  <script>
+    // > <  >= <= 『!=(不等於)』  ＝＝（判斷上的等於） 
+    //＝＝＝（嚴格的比較上的等於）
+    var a =5;
+    var b =10;
+    var c ='5';
+    var d =0;
+    var e =false;
+    var f =undefined;
+    var g = null;
+    var h = '';
+    var i =5;
+    console.log(a > b);//x
+    console.log(a != b);//o
+    console.log(a > c);//x
+    console.log(a < c);//x
+    console.log(a == c);//o
+    console.log(a===  c);//非常嚴格的比較x
+    console.log(d == e);//o
+    console.log(d === e);//x
+    console.log(d == f);//x
+    console.log(e == f);//x
+    console.log(d == g);//x
+    console.log(g == h);//x
+    console.log(d ==i );//很特別o
+
+    //條件判斷式
+    //如果這樣
+    //if (condition){
+    //我就這樣
+    //}
+    if(a != b){
+      console.log(你好);
+    }
+
+     
+    //如果這樣
+    //if (condition){
+    //我就這樣
+    //}else{
+      //否則
+      //我就這樣
+    //}
+    b = 5;
+    if(a != b){
+      console.log('你好!');
+    }else{
+      console.log('dwdwdw!');
+    }
+  </script>
+</body>
+</html>

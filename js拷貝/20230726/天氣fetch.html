@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      display: flex;
+    }
+
+    .card-region {
+      display: flex;
+      flex-wrap: wrap;
+      margin: auto;
+      background-color: blue;
+    }
+
+    .card {
+      width: 300px;
+      height: 500px;
+      background-color: coral;
+      margin-right: 10px;
+      border: 10px solid coral;
+      border-radius: 3px;
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <nav>
+
+  </nav>
+  <div class="card-region"></div>
+
+  <script>
+    //取得資料     資料位置或網址
+    const url = 'https://opendata.cwb.gov.tw/api/v1/rest/datastore/F-C0032-001?Authorization=CWB-49580C80-0B09-4AD2-88C8-0CC9BE5156A9'
+    const cityAll = [
+      ['基隆市', '新北市', '臺北市', '桃園市', '新竹市', '新竹縣', '苗栗縣', '臺中市', '南投縣', '彰化縣', '雲林縣', '嘉義市', '嘉義縣', '臺南市', '高雄市', '屏東縣', '宜蘭縣', '花蓮縣', '臺東縣', '澎湖縣', '金門縣', '連江縣'],
+      ['基隆市', '新北市', '臺北市', '桃園市', '新竹市', '新竹縣', '苗栗縣'],
+      ['臺中市', '南投縣', '彰化縣', '雲林縣', '嘉義市', '嘉義縣'],
+      ['臺南市', '高雄市', '屏東縣'],
+      ['宜蘭縣', '花蓮縣', '臺東縣'],
+      ['澎湖縣', '金門縣', '連江縣'],
+    ]
+    let nowCityAll = cityAll[0];
+    let orgData = [];//放有用的程式資料
+    fetch(url)
+      .then(function (response) {//對方要回應給你
+        //回傳 json 格式的資料  response .jaon()
+        return response.json();
+      })
+      .then(function (result) {//接收資料
+        console.log(result);
+        organizationData(result);
+        //console.log('處理資料結束');
+
+      });
+    function organizationData(data) {
+      const locationAll = data.records.location;
+      // console.log(locationAll);
+      //[]Array {}Object
+      //[{},{},{}]物件組成的陣列
+      //{age : 18} => age:key(鍵), 18鍵值
+      //person.age
+      //person['age']
+      locationAll.forEach(function (location, index) {
+        let locationName = location.locationName;
+        let loc_wE0_t0 = location.weatherElement[0].time[0];
+        let wxconition = loc_wE0_t0.parameter.parameterName;
+        let startTime = loc_wE0_t0.startTime;
+        let endTime = loc_wE0_t0.endTime;
+        let maxT = location.weatherElement[4].time[0].parameter.parameterName;
+        let minT = location.weatherElement[2].time[0].parameter.parameterName;
+        //let maxT
+        //降雨機率
+        //let pop =
+        //天氣概況
+        //let ci
+        // console.log(locationName,loc_wE0_t0, minT,maxT);
+        orgData[locationName] = {
+          'wxconition': wxconition,//物件是逗點//前面是key:後面是值
+          'startTime': startTime,
+          'endTime': endTime,
+          'minT': minT,
+          'maxT': maxT,
+        };
+        //   orgData.push = {
+        //   'wxconition': wxconition,//物件是逗點//前面是key:後面是值
+        //   'startTime': startTime,
+        //   'endTime': endTime,
+        //   'minT': minT,
+        //   'maxT': maxT,
+        // };
+      });
+      console.log(orgData);
+
+      // console.log('處理資料');
+    }
+
+    function arrange_cityAll() {
+      const cardRegion = document.querySelector('.card-region');
+      cardRegion.innerHTML = '';
+      nowCityAll.forEach(function (city, index) {
+        let cityData = orgData[city];
+        cardRegion.innerHTML += `<div>&{cityData.wxconition}</div>`
+      })
+    }
+  </script>
+</body>
+
+</html>

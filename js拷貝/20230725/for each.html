@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    let data = [100,200,300,400,500,600,700,800,900,1000];
+    data.forEach(function(item, index) {
+      item =item + 1000;
+      console.log(index,item);
+    })
+    data.forEach(myFun);
+    function myFun (item, index) {
+      item =item + 1000;
+      console.log('(2)');
+    }
+  </script>
+</body>
+</html>

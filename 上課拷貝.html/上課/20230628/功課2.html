@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 100px;
+      height: 100px;  
+      border: 1px saddlebrown;
+    }
+    .box-purple{
+      background-color: purple;
+      width:  150px;
+      height: 150px; 
+    }
+    .box-A{
+      background-color: red;
+      width: 300px;
+      height: 100px;
+    }
+    .box-B{
+      background-color: green;
+      width: 300px;
+      height: 150px;
+      display: flex;
+    }
+    .box-C{
+      background-color: palevioletred;
+      width: 300px;
+      height: 100px;
+    }
+    .box-e{
+      background-color:wheat;
+      width: 300px;
+      height: 300px;
+    }
+    .box-f{
+      background-color: blue;
+      width: 210px;
+      height: 50px;
+    }
+    .box-r{
+      background-color: yellow;
+      width: 210px;
+      height: 50px;
+    }
+    .box-g{
+      background-color: aquamarine;
+      width: 90px;
+      height: 200px;
+    }
+    .box-long{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .box-w{
+      background-color: black;
+      width: 210px;
+      height: 50px;
+    }
+</style>
+</head>
+<body>
+
+  <!-- 巢狀結構 -->
+  <div class="box-A"></div>
+  <div class="box-B">
+    <div class="box-long">
+      <div class="box-g"></div>
+      <div class="box-f"></div>
+      <div class="box-r"></div>
+      <div class="box-w"></div>
+    </div>
+  </div>
+  <div class="box-C"></div>
+
+
+</body>
+</html>

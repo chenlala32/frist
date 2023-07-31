@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0px;
+      height: 500px;
+    }
+    .container {
+      width: 100%;
+      height: 115%;
+      background-color: rgba(255, 255, 255, 0);
+    }
+    .banner {
+      width: 80%;
+      height: 500px;
+      background-color: aliceblue;
+      margin: auto;
+      background-image: url(../img照片/梅花.jpg);
+      background-size: cover;
+      position: relative;
+    }
+    .avatar {
+      width: 100px;
+      height: 100px;
+      background-color: rgb(228, 228, 244);
+      position: absolute;
+      bottom: -50px;
+      left: 50px;
+      border-radius: 50%;
+    }
+    .avatar2 {
+      width: 30px;
+      height: 30px;
+      background-color: rgb(138, 138, 145);
+      position: absolute;
+      /* z-index: 1; */
+      border-radius: 50%;
+      left: 70px;
+      top: 70px;
+    }
+    .avatar3 {
+      width: 24px;
+      height: 24px;
+      background-color: rgb(6, 247, 18);
+      margin-left: 3px;
+      margin-top: 3px;
+      border-radius: 50%;
+    }
+    .nav {
+      width: 100%;
+      height: 100px;
+      background-color: aliceblue;
+      /* 固定的定位方式 */
+      position: fixed;
+      z-index: 1;
+      font-size: 40px;
+    }
+    .nav2 {
+      width: 30px;
+      height: 30px;
+      background-color: rgb(220, 219, 219);
+      position: fixed;
+      z-index: 1;
+      border-radius: 50%;
+      position: absolute;
+      font-weight: bolder;
+      margin-left: 240px;
+      top: 35px
+    }
+    .nav3 {
+      margin-left: 50px;
+      margin-top: 20px;
+    }
+    .nav-p {
+      font-size: 20px;
+      margin-left: 5px;
+    }
+    .content {
+      width: 100%;
+      height: 500px;
+      background-color: rgb(228, 227, 227);
+      /* 字體大小 */
+      font-size: 40px;
+      /* 粗細 */
+      font-weight: bold;
+      /* 字句 */
+      letter-spacing: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="nav">
+      <div class="nav3">facebook</div>
+      <div class="nav2">
+        <div class="nav-p">🔍</div>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="avatar">
+        <div class="avatar2">
+          <div class="avatar3"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">妳好1234567890</div>
+</body>
+
+</html>

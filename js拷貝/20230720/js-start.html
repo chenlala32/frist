@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  *{
+    box-sizing: border-box;
+  }
+  .box{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 100px;
+    text-align: center;
+  }
+  .round{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 100px;
+    text-align: center;
+  }
+  .round{
+    border-radius: 50%;
+  }
+  </style>
+</head>
+<body>
+  <div class="playground">
+  <div id="box-1"class="box">1</div>
+  <div id="box-2"class="box">2</div>
+  <div id="box-3"class="box">3</div>
+  <div class="box-4 box">4</div>
+  <div id="round-1"class="round">1</div>
+  <div id="round-2"class="round">2</div>
+  <div id="round-3"class="round">3</div>
+  <div class="round-4 round">4</div>
+</div>
+  <!-- javascript -->
+  <script>
+    // 控制台 顯示訊息或資料
+    // console.log(ㄉ123);
+    // console.log(123);
+    // js寫法 小駝峰式的寫法每換個單字需頭一個字大寫
+    // 符號可以用“＿”＝>例;big_Box(可)bigBox（佳）
+    // 在網頁文件找選擇起('#id')設定樣式背景顏色＝紅
+    document.querySelector('#box-1').style.backgroundColor= 'red';
+    document.querySelector('#box-2').style.backgroundColor= 'yellow';
+    document.querySelector('#box-3').style.backgroundColor= 'green';
+    document.querySelector('.box-4').style.backgroundColor= 'black';
+    document.querySelector('.box-4').style.color= 'white';
+    document.querySelector('#round-1').style.color='red';
+    document.querySelector('#round-2').style.color='green';
+    document.querySelector('#round-3').style.color='yellow';
+    document.querySelector('#round-3').style.backgroundColor= 'red'
+    document.querySelector('.round-4').style.backgroundColor= 'green'
+    document.querySelector('.round-4').style.Color= 'yellow'
+    // 增加事件監聽器
+    document.querySelector('#box-1').addEventListener('click',function(){
+      console.log('hi');
+
+    })
+    document.querySelector('.round-4').addEventListener('click',function(){
+      console.log('ggggggg ');
+      document.querySelector('.round-4').style.backgroundColor= 'red'
+    })
+  </script>
+</body>
+</html>

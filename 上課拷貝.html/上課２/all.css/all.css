@@ -1,0 +1,365 @@
+*{box-sizing: border-box;
+}
+body {
+ margin: 0;
+}
+#nav{
+  width: 366px;
+  height: 100vh;
+  background-color: aquamarine; 
+  float: left;
+}
+@media(max-width:1210px) {
+  #nav {
+      width: 100%;
+      height: 100px;
+       float: left;
+      padding: unset;
+  } 
+}
+@media(max-width:880px) {
+  #nav {
+      position: relative
+  }
+}
+#logo{
+  width: 150px;
+  height: 150px;
+  background-color: aqua;
+  /* margin: auto; */
+  /* margin-top: 100px; */
+  margin: 100px auto 50px;
+  background-image: url(./dog.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+@media (max-width:1210px) {
+  #logo {
+      width: 80px;
+      height: 80px;
+      margin: 10px 10px;
+      float: left;
+  }
+}
+@media(max-width:880px){
+  #logo {
+      margin: 10px auto 0;
+      float: unset;
+      }
+
+}
+#logo:hover {
+  opacity: 1;
+  transform: scale(1, 1.5);
+}
+#nav-btn-all{
+  width: 150px;
+  margin: auto;
+}
+@media(max-width:1210px) {
+  #nav-btn-all {
+      width: 350px;
+      height: 100px;
+      float: right;
+      margin: unset;
+  }
+}
+.nav-btn{
+  background-color:forestgreen;
+  width: 150px;
+  height: 60px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 32px;
+  text-align:center;
+  line-height: 60px;
+  
+} 
+@media(max-width:1210px) {
+  .nav-btn {
+      width: 100px;
+      height: unset;
+      margin-bottom: unset;
+      font-size: 12px;
+      line-height: 30px;
+      float: left;
+      margin-left: 10px;
+      margin-top: 35px;
+  }
+}
+@media(max-width:880px) {
+  .nav-btn {
+      width: 100px;
+      height: unset;
+      border-radius: 10px;
+      font-size: 12px;
+      line-height: 30px;
+      margin: 10px;
+  }
+}
+@media(max-width:1210px) {
+
+  #nav-btn-1,
+  #nav-btn-2,
+  #nav-btn-3 {
+      float: left;
+  }
+}
+@media(max-width:880px){
+  #ham-menu-switch:checked~#nav-btn-all {
+      display: block;
+  }
+}
+  .ham-menu {
+      background-color: rgb(170, 170, 170);
+      width: 50px;
+      height: 50px;
+      position: relative;
+      display: block;
+      float: left;
+      margin-top: 25px 0px 0px 10px x;
+  }
+.nav-btn:hover{
+  background-color: black;
+  opacity: 0.5;
+}
+.nav-btn:active{
+  background-color: white;
+  opacity: 0.5;
+}
+#container {
+  width: calc(100% - 366px);
+  height: 100vh;
+  background-color: antiquewhite;
+  float: left;
+  padding-top: calc((100vh - 570px)/2);
+}
+@media(max-width:1210px) {
+  #container {
+      width: 100%;
+      height: calc(100vh - 100px);
+      padding: unset;
+      padding: calc((100vh - 100px - 800px) / 2);
+  }
+}
+#content {
+  width: 957px;
+  height: 570px;
+  /* background-color: aqua; */
+  margin:auto; 
+}
+@media(max-width:880px){
+  #container {
+      height: 567px;
+      clear: left;
+  }
+}
+@media (max-width:1340px) {
+  #content {
+      width: 800px;
+
+  }
+}
+  @media(max-width:1210px) {
+    #content {
+        width: 90%;
+        height: 800px;
+    }
+}
+@media(max-width:880px){
+  #content {
+      width: 100%;
+      height: 100%;
+      margin:unset;
+      float: left;
+  }
+}
+.content-img{
+  height: 100%;
+  float: left;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 3%;
+}
+.content-img:hover{
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+
+
+#img-1{
+  background-color: blue;
+  width: 32.5%;
+  background-image: url(./101.jpg)
+
+
+}
+#img-2 {
+  background-color: red;
+  width: calc(35% - 10px*2);
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  margin: 0 10px;
+background-image: url(./橋.jpg)
+}
+#img-3{
+  background-color: green;
+  width: 32.5%;
+  background-image: url(./風景1.webp)
+}
+a{
+  text-decoration: none;
+}
+.ham-menu .line {
+  width: 40%;
+  height: 5px;
+  background-color: black;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+}
+
+.ham-menu #line-1 {
+  top: 25%;
+}
+
+.ham-menu #line-2 {
+  top: 50%;
+}
+
+.ham-menu #line-3 {
+  top: 75%;
+}
+#ham-menu-switch:checked+.ham-menu #line-1{
+  top: 50%;
+transform: translate(-50%, -50%) rotate(45deg);
+}
+
+#ham-menu-switch:checked+.ham-menu #line-2 {
+  display: none;}
+  #ham-menu-switch:checked+.ham-menu #line-3 {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.nav-btn:hover {
+  /*a:hover 當滑鼠移到目標時，會變顏色*/
+  background-color: rgb(86, 42, 130);
+  color: rgb(173, 248, 223);
+}
+
+.nav-btn:active {
+  /*當滑鼠按下時，會變顏色*/
+  background-color: rgb(244, 208, 154);
+  color: rgb(195, 147, 98);
+  opacity: 0.3;
+}
+
+.content-img {
+  height: 100%;
+  float: left;
+  background-size: cover;
+  background-position: center;
+}
+@media(max-width:880px){
+  .content-img {
+      height: unset;
+  }
+}
+
+@media (max-width:1340px) {
+  .content-img {
+      /* unset還原 */
+      height: unset;
+      float: left;
+  }
+}
+
+.content-img:hover {
+  transform: scale(1.2);
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 8);
+}
+
+@media (max-width:1340px) {
+  .content-img:hover {
+      transform: scale(1.1.05);
+  }
+}
+
+#img-1:hover {
+  background-image: url('./橋.jpg');
+}
+
+#img-1 {
+  width: 32.5%;
+  background-image: url('./橋.jpg');
+}
+
+@media(max-width:1340px) {
+  #img-1 {
+      width: 100%;
+      height: calc(50% - 10px);
+      margin-bottom: 10px;
+  }
+}
+@media(max-width:880px){
+  #img-1 {
+      height: 32.5%;
+      margin-bottom: unset;
+  }
+}
+
+#img-2 {
+  width: calc(35% - 10px * 2);
+  /* margin-left: 10px;
+  margin-right: 10px; */
+  margin: 0 10px;
+  background-image: url('./風景1.webp');
+}
+
+@media(max-width:1340px) {
+  #img-2 {
+      width: calc(50% - 10px);
+      height: 50%;
+      margin: 0 10px 0 0;
+      clear: left;
+  }
+}
+@media(max-width:880px){
+  #img-2 {
+      width: 100%;
+      height: 35%;
+      margin: unset;
+      clear: unset;
+  }
+}
+#img-2:hover {
+  background-image: url('./風景1.webp');
+}
+
+#img-3 {
+  width: 32.5%;
+  background-image: url('./101.jpg');
+}
+
+@media(max-width:1340px) {
+  #img-3 {
+      width: 50%;
+      height: 50%;
+      float: left;
+  }
+}
+@media(max-width:880px){
+  #img-3 {
+      width: 100%;
+      height: 32.5%;
+  }
+
+}
+#img-3:hover {
+  background-image: url('./101.jpg');
+}

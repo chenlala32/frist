@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .ball{
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <div class="ball"></div>
+<script>
+  let ball = document.querySelector('.ball');
+  ball.addEventListener('click',function () {
+    // alert('摸我ㄧ下');
+    let r = Math.floor( Math.random()*255+1);
+    let g = Math.floor( Math.random()*255+1);
+    let b = Math.floor( Math.random()*255+1);
+    // let color ='rgb(' + r +',' + g + ','+ b +')';
+    //樣板語言
+    let color =`rgb(${r},${g},${b})`;
+    console.log(color);
+    //rgb(123,011,099)
+    ball.style.backgroundColor =color;
+  })
+  
+</script>
+</body>
+</html>

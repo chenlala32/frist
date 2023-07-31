@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box{
+      width: 500px;
+      height: 500px;
+      background-color: aqua;
+
+    }
+    .box-1{
+      width: 100px;
+      height: 100px;
+
+    }
+  .green{
+    background-color: green;
+  /* position: relative 他是定為基準要有父子層關係才成立;
+  top: 100px;
+  left: 100px; */
+  /* 絕對位置 */
+    position:relative;
+
+    left: calc(50% - 100px / 2);
+    top: calc(50% - 100px / 2);
+    /* top: 100px;
+  left: 200px; */
+  /* 水平置中與垂直置中方法 */
+  }
+  </style>
+</head>
+<body>
+  <!-- /* position系列:定位 裂隙 -->
+  <!-- position: static 定位 靜態 */ -->
+  <!-- position: relative:相對位置 -->
+  
+  <div class="box">
+    <!-- 父層必須設 position:relative-->
+ <div class="box-1 green"></div>
+  <!-- 子層必須設 position: absolute; -->
+</div>
+</body>
+</html>

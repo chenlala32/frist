@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="result"></div>
+  <script>
+    //只要兩科以上就可及格
+    //國英皆及格
+    //國數皆及格
+    //英數皆及格
+    //否則不能升級
+    //
+    // var result = document.querySelector('.result');
+    // let result = document.querySelector('.result');
+    const result = document.querySelector('.result');
+
+    let ch = 50;
+    let en = 60;
+    let math =60;
+    let pass ='';
+
+    if (ch >= 60 && en >= 60){
+      pass = true;
+    } else if(ch >= 60 && math >= 60){
+      pass = true;
+    }else if (en >= 60 && math >= 60) {
+      pass = true;
+    }else{
+      plass = false;
+    }
+    console.log(pass);
+
+    if (pass) {
+      console.log(升級);
+    }
+
+    if (!pass) {
+      console.log(失敗);
+    }
+  </script>
+</body>
+</html>

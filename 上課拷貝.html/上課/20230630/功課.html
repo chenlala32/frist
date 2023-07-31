@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .all {
+      width: calc(80% - 10px*2);
+      height: calc(600px - 10px*2);
+      background-color: antiquewhite;
+      padding: 10px;
+    }
+
+    .header {
+      width: 100%;
+      height:calc(20% - 10px);
+      background-color: yellow;
+      margin-bottom: 10px;
+    }
+
+      .main{
+        width: 100%;
+        height: 60%;
+        background-color: green;
+        margin-bottom: 10px;
+      }
+        .mainr{
+          width: 66%;
+          height: 100%;
+          background-color:antiquewhite;
+          margin-bottom: 10px;
+          float: left;
+        }
+        .mainr top{
+          width: 100%;
+          height:calc(34% - 10px);
+          background-color: cornflowerblue;
+          margin-bottom: 10px;
+        }
+        .main mid{
+          width: 100%;
+          height: 60%;
+          background-color: green;
+          margin-bottom: 10px;
+        }
+        .mainr laft{
+          width: 100%;
+          height: 60%;
+          background-color: green;
+          margin-bottom: 10px;
+        }
+      .main l{
+        width: 100%;
+        height:calc(20% - 10px);
+        background-color: green;
+        margin-bottom: 10px;
+      }
+    .footer{
+      width: 100%;
+      height:calc(20% - 10px);
+      background-color:blue;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 父層產子層要大於 的符號 .all>.header+.main+.footer-->
+  <div class="all">
+    <div class="header"></div>
+    <div class="main">
+      <div class="main l"></div>
+      <div class="main r">
+        <div class="main top"></div>
+        <!-- <div class="main mid"></div>
+        <div class="main laft"></div> -->
+      </div>
+      /div>
+    <div class="footer"></div>
+  </div>
+</body>
+
+</html>

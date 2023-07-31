@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- &nbsp;空格的意思 -->
+  性別:<input type="radio" name="gender"value="女">女&nbsp;
+  <input type="radio" name="gender"value="男">男
+  <br>
+  <br>
+  <span>年齡：</span>
+  <select name="" id="" class="age">
+    <!-- <option [value="$@11"]{$@11}*20 -->
+      option <div value="11">11</div>
+      <div value="12">12</div>
+      <div value="13">13</div>
+      <div value="14">14</div>
+      <div value="15">15</div>
+      <div value="16">16</div>
+      <div value="17">17</div>
+      <div value="18">18</div>
+      <div value="19">19</div>
+      <div value="20">20</div>
+      <div value="21">21</div>
+      <div value="22">22</div>
+      <div value="23">23</div>
+      <div value="24">24</div>
+      <div value="25">25</div>
+      <div value="26">26</div>
+      <div value="27">27</div>
+      <div value="28">28</div>
+      <div value="29">29</div>
+      <div value="30">30</div>
+      <div value="31">31</div>
+      <div value="32">32</div>
+      <div value="33">33</div>
+      <div value="34">34</div>
+      <div value="35">35</div>
+      <div value="36">36</div>
+      <div value="37">37</div>
+      <div value="38">38</div>
+      <div value="39">39</div>
+      <div value="40">40</div>
+  </select>
+  <button class="check">查詢</button>
+  <div class="result"></div>
+  <script>
+    let age = document.querySelector('.age');
+    let checkBtn =document.querySelector('.check');
+    let result = document.querySelector('.result');
+
+    checkBtn.addEventListener('check', function(){
+      let gender = document.querySelector('input[name="gender"]:checked');
+
+      console.log(gender.value);
+
+      if(!gender){
+        alert("請選性別♁");
+        return;
+      }
+      console.log(gender.value);
+    })
+    
+  </script>
+</body>
+</html>

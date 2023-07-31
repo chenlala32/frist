@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .img {
+      width: 10px;
+    }
+
+    img {
+      width: 40px;
+    }
+
+    .box {
+      width: 600px;
+      height: 600px;
+      /* background系列 */
+      background-color: black;
+      background-image: url('../img照片/松葉蟹.png');
+      /* background-size:contain */
+      /* 當圖片放大到碰到寬或高知一碰到div邊緣＝>有剩餘空間就會重複 */
+      /*當圖片碰到div的邊緣 自動放大寬和高都碰到邊緣 */
+      /* background-position:center; */
+      /* 如同拿望遠鏡觀看 */
+      /* opacity: 0.5; */
+      /* 不是把圖片變透明 是把整個div變透明 */
+      /* background-repeat: no-repeat; */
+      /* 不重複 */
+      /* 圓角 */
+      border-radius: 50%;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <!-- img;放照片的位置 -->
+  <!-- scr;圖片網址位置 ＝>路徑（path) 
+  ./ 代表現在的位置 目前的位置 資料夾的位置
+  ../代表上一層
+-->
+  <img src="../img照片/干貝1.png" alt="當照片不存在時文字描述" class=img>
+  <img src="../img照片/干貝1.png" alt="不見">
+  <!-- 背景圖片 -->
+  <div>
+    <img src="../img照片/梅花.jpg" alt="不見">
+  </div>
+  <div class="box">fhghfghgjhj</div>
+</body>
+
+</html>

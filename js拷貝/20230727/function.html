@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  .box{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid black;
+  }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+  <script>
+    box = document.querySelector('.box');
+
+    myBorder(5, 'solid', 'red');
+    show('jidij',5,'gdfgdgd',3)
+    //  設置border得函數
+    function myBorder(width, style, color) {
+      box.style.borderWidth = `${width}px`;
+      box.style.borderStyle = style;
+      box.style.borderColor =color;
+    }
+    function show (msg1, times1, msg2m,times2){
+      for (let i = 0; i < times1;i++) {
+        console.log(i,msg1);
+        
+      }
+      for (let i = 0; i < times2;i++) {
+        console.log(i,msg2);
+        
+      }
+      function showimg(imgName){
+        var wx_img_map = `./weather-img/${imgName}.svg`;
+        
+      }
+    }
+  </script>
+</body>
+</html>

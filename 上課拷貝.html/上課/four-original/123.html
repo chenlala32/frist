@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            /* height: 100vh;
+            width: 100vw;
+            background-color: blanchedalmond; */
+            /* 解析度1280x1080。1680x1050 。0.875,0.972_*/
+        }
+
+        #nav {
+            height: 97px;
+            width: 100%;
+            background-color: gainsboro;
+            float: left;
+
+        }
+
+        #container {
+            width: 100%;
+            /* height: calc(100% - 97px); */
+            height: 898px;
+            background-color: white;
+            float: left;
+            
+
+        }
+
+        #content {
+            width: 91.3%;
+            height: 778px;
+            background-color: rgb(161, 161, 218);
+            margin: auto;
+            margin-top:47px;
+            /* margin-top: calc((100vh - 554px)/2); */
+
+        }
+
+        #logo {
+            height: 79px;
+            width: 72px;
+            background-color: rgb(101, 100, 100);
+            margin-left: 29px;
+            margin-top: 9px;
+            margin-bottom: 67px;
+            background-image: url(./img/Pug-dog.jpg.webp);
+            background-size: 180%;
+            background-position: 60%;
+            border-radius: 7px;
+            float: left;
+        
+
+       
+
+
+        }
+        #nav-btn-all {
+            /* width: 324px; */
+            height: 39px;
+            background-color: gainsboro;
+            margin-right: 22px;
+            float: right;
+            
+            
+            
+        }
+
+        .nav-btn {
+            width: 86px;
+            height: 100%;
+            background-color: dodgerblue;
+            /* border: 1px solid black; */
+        
+            border-radius: 10px;
+            color: aliceblue;
+            font-size: 20px;
+            float:left;
+            margin-left: 22px;
+            margin-top: 29px;
+        }
+        
+        .nav-btn:hover {
+            background-color: aliceblue;
+            opacity: 0.5;
+            color: black;
+        }
+
+
+
+
+        .content-img {
+            height: calc(50% - 10px/2);
+
+            
+            background-image: url(./img/dogsrunningmain-o.jpg);
+            background-size: 500%;
+
+        }
+
+        #img-1 {
+            width: 100%;
+            
+            margin-bottom: 10px;
+
+            background-color: cadetblue;
+            float: left;
+
+            background-position: 50%;
+
+
+
+        }
+
+        #img-2 {
+            width:calc(50% - 10px/2);
+        
+
+            background-color: rgb(181, 189, 189);
+    
+            float: left;
+
+            background-position: 75%;
+            margin-bottom: 73px;
+
+
+
+
+        }
+
+        #img-3 {
+            width:calc(50% - 10px/2);
+
+            background-color: cadetblue;
+            margin-left: 10px;
+            float: left;
+            background-position: 100%;
+            margin-bottom: 72.9px;
+
+
+
+
+
+        }
+        #img-1:hover {
+        transform: scale(1.1) ; border-radius: 8px;
+        }
+        #img-2:hover {
+        transform: scale(1.1) ; border-radius: 8px
+        }
+        #img-3:hover {
+        transform: scale(1.1) ; border-radius: 8px
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div id="logo"></div>
+        <div id="nav-btn-all">
+            <a href="https://zh-tw.facebook.com/"><div id="nav-btn-1" class="nav-btn">FB</div></a>
+            <a href="https://www.google.com.tw/?hl=zh_TW"><div id="nav-btn-2" class="nav-btn">Google</div></a>
+            <a href="https://tw.yahoo.com/"><div id="nav-btn-3" class="nav-btn">Yahoo!</div></a>
+        </div>
+    </div>
+    <div id="container">
+        <div id="content">
+            <div id="img-1" class="content-img"></div>
+            <div id="img-2" class="content-img"></div>
+            <div id="img-3" class="content-img"></div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
